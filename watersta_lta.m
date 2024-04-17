@@ -165,10 +165,10 @@ function [sta, LTA, sta_to_lta, ta_secs] = watersta_lta(w,varargin)
     end
     end
       
-    ta_secs = newtrig_array-Number(1);
+    ta_secs = newtrig_array-[Number(1) 0];
     else    
 
-    ta_secs = (trig_array-Number(1)); 
+    ta_secs = trig_array-[Number(1) 0]; 
     end
 end   
     
